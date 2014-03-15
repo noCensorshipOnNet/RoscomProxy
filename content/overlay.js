@@ -77,6 +77,8 @@ function updProxies(callback) {
 
     request.onload = function(aEvent) {
         let text = aEvent.target.responseText;
+        alert(text);
+        Application.console.log(text);
         writeFile(proxyFile, text, true, function (status) {});
         callback(text);
     };

@@ -5,3 +5,4 @@
 <!ENTITY redownloadSites.label "Update Blocked Sites">
 <!ENTITY enterYourSites.label "ENTER LIST OF EXTERNAL WEBSITES YOU NEED TO PROXY. USE NEW LINE AS SEPARATOR.">
 <!ENTITY enterYourProxies.label "ENTER LIST OF PROXIES. USE NEW LINE AS SEPARATOR.">
+<!ENTITY proxyRecomendations.label "Automatical proxy list may not work for you. Please use google to find some proxy servers and write them here. I'd also recommend using this websites:">

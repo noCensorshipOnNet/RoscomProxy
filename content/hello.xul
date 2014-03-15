@@ -15,12 +15,30 @@
         &enterYourSites.label;
         </description>
         <textbox id="extWebsites" multiline="true"
-                 value="" newlines="pasteintact" cols="100"/>
+                 value="" newlines="pasteintact" cols="100" placeholder="http://navalny.livejournal.com"/>
         <description>
         &enterYourProxies.label;
         </description>
         <textbox id="extProxies" multiline="true"
-                 value="" newlines="pasteintact" cols="100"/>
+                 value="" newlines="pasteintact" cols="100" placeholder="XXX.XXX.XXX.XXX:XXXX|http(s)"/>
+        <description id="proxyRecomendations">
+        &proxyRecomendations.label;
+        </description>
+        <label class="text-link" value="http://letushide.com/"
+              onclick="var win = Components.classes['@mozilla.org/appshell/window-mediator;1']
+                  .getService(Components.interfaces.nsIWindowMediator)
+                  .getMostRecentWindow('navigator:browser');
+                win.openUILinkIn('http://letushide.com/?ar=5d5b58be', 'tab');"/>
+        <label class="text-link" value="https://hidemyass.com/proxy-list/"
+              onclick="var win = Components.classes['@mozilla.org/appshell/window-mediator;1']
+                  .getService(Components.interfaces.nsIWindowMediator)
+                  .getMostRecentWindow('navigator:browser');
+                win.openUILinkIn('https://hidemyass.com/proxy-list/', 'tab');"/>
+        <label class="text-link" value="https://nordvpn.com/free-proxy-list/"
+              onclick="var win = Components.classes['@mozilla.org/appshell/window-mediator;1']
+                  .getService(Components.interfaces.nsIWindowMediator)
+                  .getMostRecentWindow('navigator:browser');
+                win.openUILinkIn('https://nordvpn.com/free-proxy-list/', 'tab');"/>
         <hbox align="center">
           <description flex="1">&separate.label;</description>
           <button label="&redownloadProxies.label;" oncommand="redownloadProxies();"/>
