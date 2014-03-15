@@ -9,7 +9,7 @@ This is add-on for Firefox. It will help you dealing with censorship in Russia.
 
 Чтобы скачать сам аддон - просто достаньте .xpi файл и откройте его с помощью Firefox.
 
-Альтернативный источник xpi файла: http://www20.zippyshare.com/v/81547322/file.html
+Альтернативный источник xpi файла: https://github.com/noCensorshipOnNet/RoscomProxy/raw/master/RoscomProxy.xpi
 
 ##### Кстати это мое первое дополнение и вообще я криворукий, так что кто будет лазить в коде - желаю удачи!
 
