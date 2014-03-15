@@ -77,8 +77,13 @@ function updProxies(callback) {
 
     request.onload = function(aEvent) {
         let text = aEvent.target.responseText;
-        writeFile(proxyFile, text, true, function (status) {});
-        callback(text);
+        var jsonResp = JSON.parse(text);
+        if(jsonResp.status==0) {
+            writeFile(proxyFile, text, true, function (status) {});
+            callback(text);
+        }else{
+            return 0;
+        }
     };
 }
 
@@ -134,10 +139,18 @@ function prepareProxies(url,reset=0) {
         }
         if(usr_proxies_exist==0) {
             getRndProxy(reset,function(list) {
-                var ProxyList = JSON.parse(list);
-                var rnd = randomIntFromInterval(0,ProxyList.count);
-                var TheProxy = ProxyList.data[rnd];
-                SetProxy(TheProxy,url);
+                if(list!=0) {
+                    var ProxyList = JSON.parse(list);
+                    if(ProxyList.status==0) {
+                        var rnd = randomIntFromInterval(0,ProxyList.count);
+                        var TheProxy = ProxyList.data[rnd];
+                        SetProxy(TheProxy,url);
+                    }else{
+                        alert("There's no proxies! Find some by yourself in Internet!\nНет прокси! Поищи в интернете и вставь в настроки плагина!");
+                    }
+                }else{
+                    alert("There's no proxies! Find some by yourself in Internet!\nНет прокси! Поищи в интернете и вставь в настроки плагина!");
+                }
             });
         }
     });
