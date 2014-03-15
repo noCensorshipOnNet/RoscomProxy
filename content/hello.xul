@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://roscomproxy/skin/hello.css" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://roscomproxy/locale/hello.dtd">
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+        title="&title.label;"
+        >
+<script src="hello.js"/>
+
+<groupbox align="center" orient="horizontal">
+    <vbox align="left">
+
+        <description>
+        &enterYourSites.label;
+        </description>
+        <textbox id="extWebsites" multiline="true"
+                 value="" newlines="pasteintact" cols="100"/>
+        <description>
+        &enterYourProxies.label;
+        </description>
+        <textbox id="extProxies" multiline="true"
+                 value="" newlines="pasteintact" cols="100"/>
+        <hbox align="center">
+          <description flex="1">&separate.label;</description>
+          <button label="&redownloadProxies.label;" oncommand="redownloadProxies();"/>
+          <button label="&redownloadSites.label;" oncommand="redownloadSites();"/>
+          <button label="&close.label;" oncommand="saveWebsites(document.getElementById('extWebsites')); saveProxies(document.getElementById('extProxies')); close();"/>
+        </hbox>
+    </vbox>
+</groupbox>
+
+</window>

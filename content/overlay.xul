@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<overlay id="sample" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="overlay.js"/>
+    <statusbar id="status-bar">
+        <statusbarpanel id="reloadButton" class="statusbarpanel-iconic-text" label="Your IP isn't changed" onclick="resetProxy();" src="chrome://roscomproxy/skin/reload.png" />
+        <statusbarpanel id="menu" class="statusbarpanel-iconic" label="Open RoscomProxy" onclick="openMenu();" src="chrome://roscomproxy/skin/menu.png" />
+    </statusbar>
+</overlay>

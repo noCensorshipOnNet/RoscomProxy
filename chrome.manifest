@@ -1,0 +1,7 @@
+content	roscomproxy	content/
+overlay	chrome://browser/content/browser.xul	chrome://roscomproxy/content/overlay.xul
+
+locale	roscomproxy	en-US	locale/en-US/
+
+skin	roscomproxy	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://roscomproxy/skin/overlay.css

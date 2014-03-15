@@ -1,0 +1,7 @@
+<!ENTITY title.label "RoscomProxy">
+<!ENTITY separate.label "DO THINGZ: ">
+<!ENTITY close.label "KTHXBYE!">
+<!ENTITY redownloadProxies.label "Update Proxies">
+<!ENTITY redownloadSites.label "Update Blocked Sites">
+<!ENTITY enterYourSites.label "ENTER LIST OF EXTERNAL WEBSITES YOU NEED TO PROXY. USE NEW LINE AS SEPARATOR.">
+<!ENTITY enterYourProxies.label "ENTER LIST OF PROXIES. USE NEW LINE AS SEPARATOR.">
